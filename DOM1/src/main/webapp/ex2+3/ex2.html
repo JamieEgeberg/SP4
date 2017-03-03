@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .mydiv {width: 25px; height: 25px;background-color:yellow; margin:1px;}
+        </style>
+    </head>
+    <body>
+        <div>Exercise 2</div>
+
+        <div  id="outer" >
+            <div class="mydiv" id="div1" >1</div>
+            <div class="mydiv" id="div2" >2</div>
+            <div class="mydiv" id="div3" >3</div>
+            <div class="mydiv" id="div4" >4</div>
+            <div class="mydiv" id="div5" >5</div>
+            <div class="mydiv" id="div6" >6</div>
+            <div class="mydiv" id="div7" >7</div>
+            <div class="mydiv" id="div8" >8</div>
+            <div class="mydiv" id="div9" >9</div>
+        </div>
+
+        <p id="para"></p>
+
+        <script>
+            var outerDiv = document.getElementById("outer");
+            function clickHandler(evt) {
+                document.getElementById("para").innerHTML = "Hi from " + evt.target.id;
+            }
+            outerDiv.addEventListener("click", clickHandler);
+
+
+        </script>
+    </body>
+</html>
